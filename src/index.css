@@ -1,13 +1,77 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: myFont;
+  src: url(Poppins/Poppins-Regular.ttf);
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: myFontB;
+  src: url(Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: myFontM;
+  src: url(Poppins/Poppins-Medium.ttf);
+}
+body {
+  background-color: rgb(237, 237, 250);
+  margin: 0;
+  padding: 0;
+}
+.header {
+  text-align: center;
+  font-family: myFontB;
+  font-size: 50px;
+}
+.input {
+  /* background-color: black; */
+  display: flex;
+  gap: 0.3rem;
+  justify-content: center;
+}
+.input > input {
+  width: 400px;
+  padding: 0.7rem;
+  font-size: 17px;
+}
+.input > button {
+  background-color: rgb(101, 101, 228);
+  border: none;
+  width: 100px;
+  border-radius: 5px;
+  color: white;
+  font-family: myFontM;
+  cursor: pointer;
+}
+.input > button:hover {
+  background-color: rgb(136, 136, 233);
+  transition: 0.2s ease-in-out;
+}
+.task {
+  background-color: white;
+  max-width: 50%;
+  padding: 0.5rem;
+  margin: 1rem auto;
+}
+.task ul {
+  padding: 0;
+}
+.task li {
+  background-color: rgb(136, 136, 233);
+  font-family: myFont;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  list-style: none;
+}
+.newItem {
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: start;
+  align-items: center;
+}
+.newItem li {
+  width: 90%;
+  color: white;
+  margin-bottom: 0.4rem;
+}
+.newItem button {
+  padding: 0.3rem;
 }
